@@ -11,7 +11,12 @@ class Sudoku{
 	void flip(int n);
 	void transform();
 	void change();
+	void solve1();
+	void solve2();
 	
 	private:
-	int thesudoku[9][9];	
+	int thesudoku[9][9];
+	int thesudokusol[9][9];
+	int thesudokusol2[9][9];
+	
 };
