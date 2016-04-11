@@ -11,12 +11,21 @@ class Sudoku{
 	void flip(int n);
 	void transform();
 	void change();
-	void solve1();
-	void solve2();
+	void judge();
+	void thebreak(int a);
+	void findanswer(int a,int x,int y,int fitin);
 	
 	private:
-	int thesudoku[9][9];
 	int thesudokusol[9][9];
-	int thesudokusol2[9][9];
+	int thesudoku[9][9];
+	int nop;
+	int answer[9][9][9];
+	int solveway;
+	int whichone;
+	int I;
+	int J;
+	int thetrueanswer[9][9];
+	int thesudokuless[9][9][9][9];
+	int thesudokurest[9][9][9];
 	
 };
